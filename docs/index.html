@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seemops Trinkspiel</title>
+  <meta name="description" content="Seemops Trinkspiel ist ein offline-first Partyspiel fuer Erwachsene.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7fbf6;
+      --surface: #ffffff;
+      --text: #17211f;
+      --muted: #51615d;
+      --brand: #006c67;
+      --brand-strong: #004f4b;
+      --border: #d8e4e0;
+      --shadow: 0 18px 48px rgba(18, 36, 32, 0.12);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1614;
+        --surface: #18211f;
+        --text: #edf7f3;
+        --muted: #b5c7c2;
+        --brand: #7bd7cf;
+        --brand-strong: #a7eee8;
+        --border: #30413d;
+        --shadow: 0 18px 48px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .hero {
+      display: grid;
+      gap: 28px;
+      align-items: center;
+      min-height: calc(100vh - 112px);
+    }
+
+    .panel {
+      padding: clamp(28px, 6vw, 56px);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .brand {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .brand img {
+      width: 72px;
+      height: 72px;
+      border-radius: 8px;
+    }
+
+    .eyebrow {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 8vw, 5.2rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 2.4vw, 1.35rem);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    a {
+      color: var(--brand-strong);
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--brand);
+      background: var(--brand);
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--brand-strong);
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 32px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .facts li {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="panel">
+        <div class="brand">
+          <img src="store-assets/store-icon.png" alt="Seemops Trinkspiel Icon">
+          <div>
+            <p class="eyebrow">Offline-first Partyspiel</p>
+            <h1>Seemops Trinkspiel</h1>
+          </div>
+        </div>
+
+        <p class="lead">
+          Ein lokales Trinkspiel fuer Erwachsene mit eigenen Karten, Leveln, Pack-Vorlagen,
+          Backups und optionalem manuellem Backend-Sync.
+        </p>
+
+        <div class="actions">
+          <a class="button" href="privacy-policy.html">Datenschutz ansehen</a>
+          <a class="button secondary" href="PLAY_STORE_METADATA.md">Store-Infos</a>
+        </div>
+
+        <ul class="facts" aria-label="App Merkmale">
+          <li>Keine Werbung</li>
+          <li>Keine Analytics</li>
+          <li>Kein Konto fuer lokales Spiel</li>
+          <li>Manuelle Exporte und Backups</li>
+        </ul>
+      </div>
+
+      <footer>
+        Seemops Trinkspiel ist fuer volljaehrige Nutzer gedacht. Bitte verantwortungsvoll spielen.
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

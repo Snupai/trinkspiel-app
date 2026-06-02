@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <rect width="1024" height="500" fill="#FAFCF8"/>
+  <rect x="0" y="0" width="1024" height="500" fill="#006C67"/>
+  <path d="M0 338 C168 292 308 352 466 318 C648 279 762 202 1024 254 L1024 500 L0 500 Z" fill="#A7F0E8" opacity="0.95"/>
+  <path d="M0 404 C170 361 290 418 486 386 C680 354 804 289 1024 333 L1024 500 L0 500 Z" fill="#FFD9E1" opacity="0.9"/>
+
+  <rect x="74" y="78" width="152" height="152" rx="34" fill="#FFFFFF"/>
+  <circle cx="116" cy="120" r="14" fill="#006C67"/>
+  <circle cx="184" cy="120" r="14" fill="#006C67"/>
+  <circle cx="150" cy="154" r="14" fill="#006C67"/>
+  <circle cx="116" cy="188" r="14" fill="#006C67"/>
+  <circle cx="184" cy="188" r="14" fill="#006C67"/>
+
+  <text x="266" y="137" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" fill="#FFFFFF">Seemops Trinkspiel</text>
+  <text x="268" y="202" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="500" fill="#D6FFF9">Offline. Eigene Karten. Keine Konten.</text>
+
+  <g transform="translate(266 272)">
+    <rect x="0" y="0" width="166" height="54" rx="12" fill="#FFFFFF"/>
+    <text x="20" y="37" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#006C67">128 Karten</text>
+    <rect x="186" y="0" width="198" height="54" rx="12" fill="#FFFFFF"/>
+    <text x="214" y="37" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#006C67">18+ Setup</text>
+    <rect x="404" y="0" width="178" height="54" rx="12" fill="#FFFFFF"/>
+    <text x="432" y="37" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#006C67">Backups</text>
+  </g>
+
+  <rect x="706" y="72" width="210" height="292" rx="24" fill="#FFFFFF" opacity="0.96"/>
+  <rect x="734" y="104" width="154" height="34" rx="8" fill="#E2ECE8"/>
+  <rect x="734" y="158" width="154" height="92" rx="12" fill="#A7F0E8"/>
+  <circle cx="766" cy="190" r="10" fill="#006C67"/>
+  <circle cx="856" cy="190" r="10" fill="#006C67"/>
+  <circle cx="811" cy="204" r="10" fill="#006C67"/>
+  <circle cx="766" cy="224" r="10" fill="#006C67"/>
+  <circle cx="856" cy="224" r="10" fill="#006C67"/>
+  <rect x="734" y="276" width="154" height="44" rx="22" fill="#006C67"/>
+  <text x="769" y="306" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Karte ziehen</text>
+</svg>

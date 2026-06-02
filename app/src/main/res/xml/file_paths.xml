@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path
+        name="transfer_packages"
+        path="share/transfer/" />
+    <cache-path
+        name="card_sync_packages"
+        path="share/card_sync/" />
+    <cache-path
+        name="backend_invite_packages"
+        path="share/backend_invite/" />
+</paths>

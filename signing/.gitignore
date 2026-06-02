@@ -1,0 +1,7 @@
+*.keystore
+*.jks
+release-signing.properties
+
+!.gitignore
+!README.md
+!release-signing.properties.example

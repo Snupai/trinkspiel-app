@@ -1,0 +1,4 @@
+SEEMOPS_RELEASE_STORE_FILE=signing/seemops-release.keystore
+SEEMOPS_RELEASE_STORE_PASSWORD=change-me
+SEEMOPS_RELEASE_KEY_ALIAS=seemops-release
+SEEMOPS_RELEASE_KEY_PASSWORD=change-me
