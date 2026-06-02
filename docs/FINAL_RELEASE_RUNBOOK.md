@@ -36,7 +36,7 @@ Expected before the external blockers are cleared:
   - round/score reset controls
 - Store screenshots and graphics are present, and screenshots are newer than the current UI source files with clean demo-mode status bars verified by `scripts/check-store-screenshot-polish.sh`.
 - Play Console handoff shows `READY`, meaning the submission answers still match the app identity, store/privacy docs, dependencies, permissions, and backup settings.
-- Release AAB is unsigned until real signing is configured.
+- Release AAB is signed with non-debug release signing material.
 
 For the final all-in-one upload gate, use:
 
@@ -103,7 +103,7 @@ scripts/prepare-privacy-policy-hosting.sh
 Set the final HTTPS URL:
 
 ```sh
-export SEEMOPS_PRIVACY_POLICY_URL="https://privacy.your-real-domain.com/privacy-policy"
+export SEEMOPS_PRIVACY_POLICY_URL="https://snupai.github.io/trinkspiel-app/privacy-policy.html"
 ```
 
 Run:

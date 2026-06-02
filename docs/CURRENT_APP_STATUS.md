@@ -8,7 +8,7 @@ This is the short, plain-language status snapshot for Seemops Trinkspiel `3.0 (3
 
 The app is feature-complete locally for the current Play Store handoff path, but it is not upload-ready yet.
 
-Local build, unit-test, lint, connected Android UI/import tests, Play Console handoff, package integrity evidence, and Play Store phone screenshots are current. The remaining release blockers are external: real release signing credentials, a hosted public HTTPS privacy-policy URL, and a passed real-device manual QA report.
+Local build, unit-test, lint, connected Android UI/import tests, Play Console handoff, package integrity evidence, Play Store phone screenshots, release signing, and GitHub Pages privacy hosting are current. The remaining release blocker is the passed real-device manual QA report; final gate commands still need `SEEMOPS_PRIVACY_POLICY_URL=https://snupai.github.io/trinkspiel-app/privacy-policy.html` and `SEEMOPS_MANUAL_QA_CONFIRMED=1` in the shell.
 
 ## What The App Can Do Now
 
@@ -30,8 +30,8 @@ Local build, unit-test, lint, connected Android UI/import tests, Play Console ha
 
 ## What The App Cannot Do Yet
 
-- It cannot be uploaded to Play Console as-is, because `app-release.aab` is currently unsigned.
-- It cannot pass the final release gate until `SEEMOPS_PRIVACY_POLICY_URL` points to the hosted public HTTPS privacy policy; `scripts/prepare-privacy-policy-hosting.sh` now prepares the exact static HTML bundle for that upload.
+- It should not be uploaded to Play Console until real-device manual QA is complete, even though the release AAB is now signed.
+- It cannot pass the final release gate unless `SEEMOPS_PRIVACY_POLICY_URL` is set to the hosted public HTTPS privacy policy: `https://snupai.github.io/trinkspiel-app/privacy-policy.html`.
 - It cannot be marked ready for public release until real-device manual QA is completed with concrete Notes evidence on the 16 high-risk rows and confirmed with `SEEMOPS_MANUAL_QA_CONFIRMED=1`; `scripts/prepare-manual-qa-evidence-packet.sh` now prepares the evidence packet for that pass.
 - It does not provide online multiplayer, production cloud sync, real accounts, ads, analytics, automatic third-party crash reporting, or a public card marketplace.
 - The Backend-Sync path is manual and optional. It has preview/confirm UI, Backend-Invite package sharing/import, admin-created contributor invites, generated invite revocation, admin-only membership summaries on the local reference backend, and Android HTTP client coverage, but no hosted production backend, login flow, real account model, automatic background sync, or server-side gameplay storage yet.
@@ -39,12 +39,11 @@ Local build, unit-test, lint, connected Android UI/import tests, Play Console ha
 
 ## What Should Happen Next
 
-1. Run `scripts/prepare-release-signing-handoff.sh`, configure real release signing credentials on the trusted signing machine, and rebuild the release bundle.
-2. Run `scripts/prepare-privacy-policy-hosting.sh`, then host the exact generated privacy-policy HTML at the final public HTTPS privacy-policy URL.
-3. Run `scripts/prepare-manual-qa.sh --update-report --tester "Your Name"` on a phone-sized device, then use `build/manual-qa/evidence/tester-run-sheet.md` and the rest of `build/manual-qa/evidence/` to complete every manual QA row by hand and replace high-risk `TODO evidence:` notes with concrete device evidence.
-4. Run `scripts/finalize-play-store-release.sh --capture-screenshots` after signing, privacy URL, and manual QA are complete.
-5. Open the generated package's `OWNER_BRIEF.md`, then confirm `MANIFEST.md` says `Upload-ready status: ready`, `Blockers remaining: 0`, and `Package integrity status: pass`.
-6. Upload the signed `android/app-release.aab` from the generated Play Store package folder.
+1. Run `scripts/prepare-manual-qa.sh --update-report --tester "Your Name"` on a phone-sized device, then use `build/manual-qa/evidence/tester-run-sheet.md` and the rest of `build/manual-qa/evidence/` to complete every manual QA row by hand and replace high-risk `TODO evidence:` notes with concrete device evidence.
+2. Export `SEEMOPS_PRIVACY_POLICY_URL=https://snupai.github.io/trinkspiel-app/privacy-policy.html` and `SEEMOPS_MANUAL_QA_CONFIRMED=1`.
+3. Run `scripts/finalize-play-store-release.sh --capture-screenshots` after manual QA is complete.
+4. Open the generated package's `OWNER_BRIEF.md`, then confirm `MANIFEST.md` says `Upload-ready status: ready`, `Blockers remaining: 0`, and `Package integrity status: pass`.
+5. Upload the signed `android/app-release.aab` from the generated Play Store package folder.
 
 ## ASAP Feature And QA Priorities
 

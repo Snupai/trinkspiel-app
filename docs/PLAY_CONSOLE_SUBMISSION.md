@@ -29,7 +29,7 @@ Use this as the app-specific source while filling Play Console. It summarizes th
 | Phone screenshots | `docs/store-assets/screenshots/phone/*.png` |
 | Content review evidence | `docs/CONTENT_REVIEW.md` |
 | Manual QA evidence | `docs/MANUAL_QA_REPORT.md`, with generated `manual-qa-evidence/` packet in the handoff package |
-| Privacy policy | `docs/privacy-policy.html`, or the exact generated `privacy-hosting/privacy-policy.html`, hosted at `SEEMOPS_PRIVACY_POLICY_URL` |
+| Privacy policy | `https://snupai.github.io/trinkspiel-app/privacy-policy.html` |
 
 ## App Access
 
@@ -80,8 +80,8 @@ Supporting source: `docs/DATA_SAFETY.md`.
 
 ## Privacy Policy
 
-- Run `scripts/prepare-privacy-policy-hosting.sh`, then host `build/privacy-policy-hosting/privacy-policy.html`, `docs/privacy-policy.html`, or the package `privacy-hosting/privacy-policy.html` at the final public HTTPS URL.
-- Set `SEEMOPS_PRIVACY_POLICY_URL` to that URL.
+- GitHub Pages hosts `docs/privacy-policy.html` at `https://snupai.github.io/trinkspiel-app/privacy-policy.html`.
+- Set `SEEMOPS_PRIVACY_POLICY_URL=https://snupai.github.io/trinkspiel-app/privacy-policy.html`.
 - Run `scripts/check-privacy-policy-url.sh`.
 - The final gate rejects localhost/private/example/test URLs, follows redirects, and requires the hosted page to contain the expected Seemops privacy-policy commitments and exactly match `docs/privacy-policy.html`.
 

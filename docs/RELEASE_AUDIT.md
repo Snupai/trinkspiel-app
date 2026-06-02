@@ -11,8 +11,8 @@ Last updated: 2026-06-02
 - Debug lint reports no issues.
 - Android test APK compiles.
 - Connected tests pass on `Medium_Phone_API_36.1` via `scripts/run-connected-ui-tests.sh`: 26 tests, 0 skipped, 0 failed. The current release-gate evidence covers transfer-package attachment URIs, direct incoming-share preview, incoming import confirmation, starter draw/session recap, pack template drafts, skip/complete/undo gameplay, active card-library switching, theme/privacy controls, settings release options, entry CRUD controls, external-contributor review defaults, player/scoreboard controls, last-issue controls, settings reset controls, round/score reset controls, repository level-table moves, and FileProvider share paths.
-- Release AAB is currently unsigned until real signing credentials are configured.
-- Release signing config self-check sees the default keystore file, but still needs the store password, key alias, and key password.
+- Release AAB is signed with non-debug release signing material.
+- Release signing config self-check reports `READY` for the ignored local `signing/release-signing.properties` and `signing/seemops-release-20260602.keystore`.
 - Store screenshots are current with UI source files: six 1080x2400 phone screenshots were regenerated with `scripts/capture-store-screenshots.sh`, and `scripts/check-store-screenshot-polish.sh` verifies clean demo-mode status bars.
 
 ## Implemented App Scope
@@ -83,7 +83,7 @@ Last updated: 2026-06-02
 - Configure real signing credentials using environment variables, Gradle properties, or `signing/release-signing.properties`.
 - Run `scripts/prepare-release-signing-handoff.sh` when handing signing work to the credential owner.
 - Run `scripts/check-release-signing-config.sh` and confirm it reports `READY`.
-- Set `SEEMOPS_PRIVACY_POLICY_URL` to the hosted public HTTPS privacy-policy URL and confirm the hosted page is reachable with the expected Seemops privacy-policy commitments and exactly matches `docs/privacy-policy.html`.
+- Set `SEEMOPS_PRIVACY_POLICY_URL=https://snupai.github.io/trinkspiel-app/privacy-policy.html` and confirm the hosted page is reachable with the expected Seemops privacy-policy commitments and exactly matches `docs/privacy-policy.html`.
 - Run `scripts/prepare-privacy-policy-hosting.sh` before hosting so the public URL can be deployed from the exact generated static bundle.
 - Run `scripts/check-privacy-policy-url.sh` and confirm the privacy-policy URL check passes.
 - Complete `docs/MANUAL_QA_REPORT.md` with filled fields, `Result: Passed`, and every checklist row marked `Passed`, then set `SEEMOPS_MANUAL_QA_CONFIRMED=1`.
@@ -100,6 +100,4 @@ Last updated: 2026-06-02
 
 ## External Blockers
 
-- Release signing store password, key alias, and key password are not known to this workspace.
-- Hosted privacy-policy URL is not known to this workspace.
 - Real-device manual QA confirmation is not known to this workspace.
