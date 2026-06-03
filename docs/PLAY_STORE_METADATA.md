@@ -10,20 +10,20 @@ Offline Trinkspiel mit eigenen Karten, Packs, Spielern, Teams und Backup.
 
 ## Full Description
 
-Seemops Trinkspiel ist ein offline spielbares Partyspiel fuer Erwachsene. Erstellt eigene Karten, ladet Standardpacks, stellt Intensitaet und Modus ein und zieht Karten ohne Wiederholungen, bis das spielbare Deck durch ist.
+Seemops Trinkspiel ist ein offline spielbares Partyspiel für Erwachsene. Erstellt eigene Karten, ladet Standardpacks, stellt Intensität und Modus ein und zieht Karten ohne Wiederholungen, bis das spielbare Deck durch ist.
 
 Features:
 
 - 128 Standardkarten in 8 Packs
 - Eigene Karten mit Kategorie, Pack, Schlucken und Aktiv/Pausiert-Status
-- Pack-Vorlagen mit pausierten Entwurfskarten, Kategorie-Mix und Intensitaets-Empfehlung
+- Pack-Vorlagen mit pausierten Entwurfskarten, Kategorie-Mix und Intensitäts-Empfehlung
 - Import, Export, Teilen und Vollbackup per JSON mit Vorschau vor dem Import
-- Offline-Geraetewechsel per JSON-Transferpaket mit direktem Teilen/Oeffnen
-- Backend-Invite per JSON fuer geteilte Kartenbibliotheken
+- Offline-Gerätewechsel per JSON-Transferpaket mit direktem Teilen/Öffnen
+- Backend-Invite per JSON für geteilte Kartenbibliotheken
 - Spielmodi: Chill, Classic, Couples, Chaos und Custom
-- Intensitaet: Locker, Normal und Chaos
+- Intensität: Locker, Normal und Chaos
 - Spielerrotation, Teams, Scoreboard und manuelle Punkte/Schlucke
-- Lokaler Rundenrueckblick mit gezogenen Karten und Spielstaenden
+- Lokaler Rundenrückblick mit gezogenen Karten und Spielständen
 - Skip, Undo und Rundenreset
 - Offline, ohne Konto, optionaler Karten-Backend-Sync, ohne Werbung, ohne Tracking
 - 18+ Setup vor dem ersten Spielstart
@@ -31,30 +31,30 @@ Features:
 
 Sicherheit:
 
-Die App ist nur fuer volljaehrige Spieler gedacht und fragt vor dem ersten Spielstart eine 18+ Bestaetigung ab. Trink verantwortungsvoll, trink Wasser, mach Pausen und hoer jederzeit auf.
+Die App ist nur für volljährige Spieler gedacht und fragt vor dem ersten Spielstart eine 18+ Bestätigung ab. Trink verantwortungsvoll, trink Wasser, mach Pausen und hör jederzeit auf.
 
 Datenschutz:
 
-Karten, Spieler, Scores und Einstellungen bleiben lokal auf deinem Geraet, bis du Export, Teilen, Import, Backend-Invite oder den optionalen Backend-Sync selbst ausloest. Backend-Sync nutzt nur die von dir eingetragene Backend-URL und deinen Sync-Token.
+Karten, Spieler, Scores und Einstellungen bleiben lokal auf deinem Gerät, bis du Export, Teilen, Import, Backend-Invite oder den optionalen Backend-Sync selbst auslöst. Backend-Sync nutzt nur die von dir eingetragene Backend-URL und deinen Sync-Token.
 
 ## What's New
 
 Version 3.0
 
-- Neues Vollbackup fuer Karten und Einstellungen
-- Offline-Geraetewechsel per JSON-Transferpaket mit direktem Teilen/Oeffnen
-- Import-Vorschau fuer Packs und Backups vor dem Uebernehmen
+- Neues Vollbackup für Karten und Einstellungen
+- Offline-Gerätewechsel per JSON-Transferpaket mit direktem Teilen/Öffnen
+- Import-Vorschau für Packs und Backups vor dem Übernehmen
 - 8 Standardpacks mit insgesamt 128 Karten, neu mit Spieleabend Pack und Feierabend Pack
-- Karten koennen pausiert und wieder aktiviert werden
-- Pack-Vorlagen fuer eigene, ausgewogene Entwurfspacks
+- Karten können pausiert und wieder aktiviert werden
+- Pack-Vorlagen für eigene, ausgewogene Entwurfspacks
 - Bessere Filter, Suche, Sortierung und Bulk-Aktionen
 - Spieler, Teams, Scoreboard, Undo und Skip
-- Lokaler Rundenrueckblick mit gezogenen Karten und Spielstaenden
+- Lokaler Rundenrückblick mit gezogenen Karten und Spielständen
 - 18+ Erstsetup vor dem Spielstart
 - Diagnosebericht und letzten Fehler lokal teilen/exportieren, Support-Anfrage vorbereiten
 - Datenschutz- und Sicherheitsbereich in den Einstellungen
-- Optionaler manueller Karten-Backend-Sync fuer geteilte Bibliotheken vorbereitet
-- Backend-Invite JSON fuer geteilte Kartenbibliotheken vorbereitet
+- Optionaler manueller Karten-Backend-Sync für geteilte Bibliotheken vorbereitet
+- Backend-Invite JSON für geteilte Kartenbibliotheken vorbereitet
 
 ## Store Graphic Checklist
 

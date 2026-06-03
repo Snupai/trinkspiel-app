@@ -103,4 +103,4 @@ adb shell am force-stop "$PACKAGE_NAME" >/dev/null
 adb shell am start -n "$MAIN_ACTIVITY" >/dev/null
 
 printf 'Seeded a manual-QA last-issue summary at %s.\n' "$timestamp"
-printf 'Open Einstellungen > Diagnose and verify Letzten Fehler teilen/exportieren/loeschen.\n'
+printf 'Open Einstellungen > Diagnose and verify Letzten Fehler teilen/exportieren/löschen.\n'

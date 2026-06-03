@@ -17,7 +17,7 @@ class LegalCopyTest {
         assertTrue(text.contains("keine spielernamen"))
         assertTrue(text.contains("backend-invite"))
         assertTrue(text.contains("backend-mitglieder"))
-        assertTrue(text.contains("beitraeger-profilnamen"))
+        assertTrue(text.contains("beiträger-profilnamen"))
         assertTrue(text.contains("widerrufst"))
         assertTrue(text.contains("mitgliedschafts-id"))
         assertTrue(text.contains("remote-karten-id"))

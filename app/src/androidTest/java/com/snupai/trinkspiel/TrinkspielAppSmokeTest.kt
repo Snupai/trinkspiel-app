@@ -73,9 +73,9 @@ class TrinkspielAppSmokeTest {
         composeRule.onNodeWithText("Bereit machen").assertIsDisplayed()
         composeRule.onNodeWithText("Ohne Karten starten").performScrollTo().assertIsNotEnabled()
 
-        composeRule.onNodeWithContentDescription("18 plus bestaetigen").performScrollTo().performClick()
+        composeRule.onNodeWithContentDescription("18 plus bestätigen").performScrollTo().performClick()
         composeRule.onNodeWithText("Ohne Karten starten").performScrollTo().assertIsNotEnabled()
-        composeRule.onNodeWithContentDescription("Sicher spielen bestaetigen").performScrollTo().performClick()
+        composeRule.onNodeWithContentDescription("Sicher spielen bestätigen").performScrollTo().performClick()
         composeRule.onNodeWithText("Mit Classic Starter starten").performScrollTo().assertIsEnabled().performClick()
 
         composeRule.waitForPlayableDeck()
@@ -160,8 +160,8 @@ class TrinkspielAppSmokeTest {
     @Test
     fun firstRunSetupCanChooseAStarterPack() {
         composeRule.onNodeWithText("Preparty Pack").performScrollTo().performClick()
-        composeRule.onNodeWithContentDescription("18 plus bestaetigen").performScrollTo().performClick()
-        composeRule.onNodeWithContentDescription("Sicher spielen bestaetigen").performScrollTo().performClick()
+        composeRule.onNodeWithContentDescription("18 plus bestätigen").performScrollTo().performClick()
+        composeRule.onNodeWithContentDescription("Sicher spielen bestätigen").performScrollTo().performClick()
         composeRule.onNodeWithText("Mit Preparty Pack starten").performScrollTo().assertIsEnabled().performClick()
 
         composeRule.waitForPlayableDeck()
@@ -423,8 +423,8 @@ class TrinkspielAppSmokeTest {
     }
 
     private fun completeFirstRunSetupWithoutCards() {
-        composeRule.onNodeWithContentDescription("18 plus bestaetigen").performScrollTo().performClick()
-        composeRule.onNodeWithContentDescription("Sicher spielen bestaetigen").performScrollTo().performClick()
+        composeRule.onNodeWithContentDescription("18 plus bestätigen").performScrollTo().performClick()
+        composeRule.onNodeWithContentDescription("Sicher spielen bestätigen").performScrollTo().performClick()
         composeRule.onNodeWithText("Ohne Karten starten").performScrollTo().performClick()
         composeRule.waitForText("Classic Starter laden")
     }

@@ -14,7 +14,7 @@ class QuestionLevelTest {
         assertTrue(QuestionLevel.LEVEL_1.description.contains("Lockere Fragen"))
         assertTrue(QuestionLevel.LEVEL_2.description.contains("Trinklastige Karten"))
         assertTrue(QuestionLevel.LEVEL_3.description.contains("Viel Alkohol"))
-        assertTrue(QuestionLevel.LEVEL_3.description.contains("freizuegige Aufgaben"))
+        assertTrue(QuestionLevel.LEVEL_3.description.contains("freizügige Aufgaben"))
     }
 
     @Test

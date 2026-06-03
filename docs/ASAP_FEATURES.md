@@ -63,7 +63,7 @@ This list is the source of truth for the next highest-priority work before and i
 ## P2: Product Expansion
 
 - Optional cloud/device-to-device transfer.
-  - Status: implemented as an offline "Geraetewechsel" settings section using user-initiated transfer-package sharing/import, plus an optional manual Backend-Sync section for shared card libraries.
+  - Status: implemented as an offline "Gerätewechsel" settings section using user-initiated transfer-package sharing/import, plus an optional manual Backend-Sync section for shared card libraries.
   - The transfer package is a file-backed JSON attachment using the full backup format, including known local card-user profiles and active gameplay question-level selection, and does not upload data to a server.
   - Received JSON backups can be opened or shared directly to Seemops and still go through the same preview-confirm import flow.
   - Connected coverage verifies direct Seemops receive/open handling through preview confirmation and local card import.
@@ -79,7 +79,7 @@ This list is the source of truth for the next highest-priority work before and i
   - Connected coverage now requires the pack-template draft creation flow before release.
   - Next: confirm template edit/activation touch flow during real-device QA.
 - Session recap.
-  - Status: implemented as a local "Rueckblick" panel with current round totals, recent drawn cards, and top player standings.
+  - Status: implemented as a local "Rückblick" panel with current round totals, recent drawn cards, and top player standings.
   - Connected coverage now requires the starter draw/session recap flow before release.
   - Next: confirm the recap layout during real-device QA and keep it local-only without analytics or remote storage.
 

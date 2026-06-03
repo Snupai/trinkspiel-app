@@ -125,13 +125,13 @@ fun FirstRunSetupScreen(vm: DrinkViewModel) {
                 ConfirmationRow(
                     checked = ageConfirmed,
                     onCheckedChange = { ageConfirmed = it },
-                    contentDescription = "18 plus bestaetigen",
+                    contentDescription = "18 plus bestätigen",
                     text = "Ich bin mindestens 18 Jahre alt.",
                 )
                 ConfirmationRow(
                     checked = safetyConfirmed,
                     onCheckedChange = { safetyConfirmed = it },
-                    contentDescription = "Sicher spielen bestaetigen",
+                    contentDescription = "Sicher spielen bestätigen",
                     text = "Wir trinken verantwortungsvoll, machen Pausen und hören jederzeit auf.",
                 )
             }

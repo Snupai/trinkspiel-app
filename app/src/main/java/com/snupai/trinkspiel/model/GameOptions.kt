@@ -87,7 +87,7 @@ enum class QuestionLevel(
         id = 3,
         label = "3 Fast ausziehen",
         shortLabel = "L3",
-        description = "Viel Alkohol und sehr freizuegige Aufgaben.",
+        description = "Viel Alkohol und sehr freizügige Aufgaben.",
     );
 
     companion object {

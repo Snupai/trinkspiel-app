@@ -526,7 +526,7 @@ fun SettingsScreen(
 
             SettingsCard(title = "Backend-Sync") {
                 Text(
-                    "Optionaler Anschluss an einen Karten-Backend-Endpunkt. Sync laeuft nur, wenn du ihn hier manuell startest.",
+                    "Optionaler Anschluss an einen Karten-Backend-Endpunkt. Sync läuft nur, wenn du ihn hier manuell startest.",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -659,7 +659,7 @@ fun SettingsScreen(
                 )
                 Text("Contributor-Invite", style = MaterialTheme.typography.labelLarge)
                 Text(
-                    "Mit einem Admin-Token kann das Backend einen eigenen Token fuer einen neuen Beiträger erzeugen.",
+                    "Mit einem Admin-Token kann das Backend einen eigenen Token für einen neuen Beiträger erzeugen.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -848,7 +848,7 @@ fun SettingsScreen(
                     style = MaterialTheme.typography.bodyLarge
                 )
                 Text(
-                    "Karten, Spieler, Scores und Einstellungen bleiben lokal auf diesem Gerät, bis du Export, Teilen, Import oder den optionalen Backend-Sync selbst ausloest.",
+                    "Karten, Spieler, Scores und Einstellungen bleiben lokal auf diesem Gerät, bis du Export, Teilen, Import oder den optionalen Backend-Sync selbst auslöst.",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -999,7 +999,7 @@ fun SettingsScreen(
             title = { Text("Invite entziehen?") },
             text = {
                 Text(
-                    "Der Backend-Token fuer ${membership.contributorName.ifBlank { "diesen Beiträger" }} wird widerrufen. Bereits synchronisierte Karten bleiben erhalten.",
+                    "Der Backend-Token für ${membership.contributorName.ifBlank { "diesen Beiträger" }} wird widerrufen. Bereits synchronisierte Karten bleiben erhalten.",
                     style = MaterialTheme.typography.bodyMedium,
                 )
             },

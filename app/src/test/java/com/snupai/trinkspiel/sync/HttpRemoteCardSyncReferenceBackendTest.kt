@@ -246,7 +246,7 @@ class HttpRemoteCardSyncReferenceBackendTest {
                             entry = DrinkEntry(
                                 id = 78,
                                 remoteId = createdCard.remoteId,
-                                text = "Sam ueberschreibt Mika",
+                                text = "Sam überschreibt Mika",
                                 drinks = 2,
                                 category = CardCategory.CHALLENGE.id,
                                 packName = "WG",

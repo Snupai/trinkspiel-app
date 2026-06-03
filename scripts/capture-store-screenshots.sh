@@ -206,8 +206,8 @@ dismiss_system_dialogs
 wait_for_text "Bereit machen"
 capture "01-first-run-setup.png"
 
-tap_node "content-desc" "18 plus bestaetigen"
-tap_node "content-desc" "Sicher spielen bestaetigen"
+tap_node "content-desc" "18 plus bestätigen"
+tap_node "content-desc" "Sicher spielen bestätigen"
 swipe_up_until_text "Mit Classic Starter starten"
 tap_node "text" "Mit Classic Starter starten"
 

@@ -13,14 +13,14 @@ object SupportRequest {
         appendLine("Technische Infos")
         appendLine("App-Version: ${snapshot.appVersionName} (${snapshot.appVersionCode})")
         appendLine("Android SDK: ${snapshot.androidSdk}")
-        appendLine("Geraet: ${snapshot.device}")
+        appendLine("Gerät: ${snapshot.device}")
         appendLine("Karten aktiv/gesamt: ${snapshot.activeCards}/${snapshot.totalCards}")
         appendLine("Packs: ${snapshot.packCount}")
         appendLine("Spieleranzahl: ${snapshot.playerCount}")
-        appendLine("Modus/Intensitaet: ${snapshot.mode}/${snapshot.intensity}")
+        appendLine("Modus/Intensität: ${snapshot.mode}/${snapshot.intensity}")
         appendLine("Theme: ${snapshot.themeMode}")
         appendLine("Systemfarben: ${yesNo(snapshot.dynamicColors)}")
-        appendLine("18+ bestaetigt: ${yesNo(snapshot.ageGateAccepted)}")
+        appendLine("18+ bestätigt: ${yesNo(snapshot.ageGateAccepted)}")
         appendLine("Setup abgeschlossen: ${yesNo(snapshot.firstRunSetupCompleted)}")
         appendLine("Generiert: ${snapshot.generatedAt}")
         snapshot.latestCrash?.let { crash ->
@@ -30,8 +30,8 @@ object SupportRequest {
             }
         } ?: appendLine("Letzter Absturz: keiner gespeichert")
         appendLine()
-        appendLine("Hinweis: Diese Anfrage enthaelt keine Kartentexte und keine Spielernamen.")
-        appendLine("Falls noetig, kannst du den Diagnosebericht separat aus den Einstellungen exportieren.")
+        appendLine("Hinweis: Diese Anfrage enthält keine Kartentexte und keine Spielernamen.")
+        appendLine("Falls nötig, kannst du den Diagnosebericht separat aus den Einstellungen exportieren.")
     }
 
     private fun yesNo(value: Boolean): String = if (value) "ja" else "nein"
